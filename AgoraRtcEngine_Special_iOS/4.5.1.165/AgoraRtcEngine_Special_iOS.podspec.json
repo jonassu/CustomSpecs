@@ -17,7 +17,6 @@
   "source": {
     "http": "https://download.agora.io/sdk/release/AgoraRtcEngine_Special_iOS-4.5.1.165.zip"
   },
-  "requires_arc": true,
   "subspecs": [
     {
       "name": "RtcBasic",
