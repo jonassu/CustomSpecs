@@ -1,0 +1,59 @@
+{
+  "name": "AgoraRtcEngine_Special_iOS",
+  "version": "4.5.1.165",
+  "summary": "Agora iOS video SDK",
+  "description": "iOS library for agora A/V communication, broadcasting and data channel service.",
+  "homepage": "https://docs.agora.io/en/Agora%20Platform/downloads",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2023 agora.io. All rights reserved.\n"
+  },
+  "authors": {
+    "Agora Lab": "developer@agora.io"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "http": "https://download.agora.io/sdk/release/AgoraRtcEngine_Special_iOS-4.5.1.165.zip"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "RtcBasic",
+      "vendored_frameworks": [
+        "AgoraRtcKit.xcframework",
+        "Agoraffmpeg.xcframework"
+      ],
+      "weak_frameworks": [
+        "AgoraRtcKit",
+        "Agoraffmpeg"
+      ]
+    },
+    {
+      "name": "AgoraInfra",
+      "vendored_frameworks": "aosl.xcframework",
+      "weak_frameworks": "aosl"
+    },
+	{
+      "name": "AIAEC",
+      "vendored_frameworks": "AgoraAiEchoCancellationExtension.xcframework",
+      "weak_frameworks": "AgoraAiEchoCancellationExtension"
+    },
+    {
+      "name": "AIAECLL",
+      "vendored_frameworks": "AgoraAiEchoCancellationLLExtension.xcframework",
+      "weak_frameworks": "AgoraAiEchoCancellationLLExtension"
+    },
+	{
+      "name": "AINS",
+      "vendored_frameworks": "AgoraAiNoiseSuppressionExtension.xcframework",
+      "weak_frameworks": "AgoraAiNoiseSuppressionExtension"
+    },
+    {
+      "name": "AINSLL",
+      "vendored_frameworks": "AgoraAiNoiseSuppressionLLExtension.xcframework",
+      "weak_frameworks": "AgoraAiNoiseSuppressionLLExtension"
+    }
+  ]
+}
